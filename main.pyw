@@ -257,7 +257,7 @@ def main(begin, flag):  # 重新开始是否进入开始界面标记 重新开�
                         if not onlined:
                             try:
                                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                                s.connect(('127.0.0.1', 8888))  # 与服务器连接，需要基于局域网
+                                s.connect(('47.114.165.253', 8026))  # 与服务器连接，需要基于局域网
 
                                 for data in [bytes(name, 'utf-8'), bytes(str(score), 'utf-8')]:
                                     if s.recv(1024):

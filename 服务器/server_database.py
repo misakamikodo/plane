@@ -2,7 +2,7 @@ import socket,threading,time,base64,json,pymysql          #导入socket库
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #创建一个socket对象，AF_INET指定使用IPv4协议(AF_INET6代表IPV6)，SOCK_STREAM指定使用面向流的TCP协议
-s.bind(('127.0.0.1',8888))
+s.bind(('47.114.165.253',8026))
 
 #监听端口，127.0.0.1是本机地址，客户端必须在本机才能与其连接。端口大于1024的随便找一个
 s.listen(5)#开始监听端口，数字表示等待连接的最大数量
